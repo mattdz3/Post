@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Delius' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <!--[if lt IE 10]>
@@ -26,15 +27,31 @@
       <h1>PostPal</h1>
     </div>
 
-    <div class="container">
-      <img src="http://www.twiniversity.com/wp-content/uploads/2012/05/MP900341542.jpg"/>
-      <div class="info">
-        <h2>Welcome to PostPal</h2>
-        <p>Want to send a real letter from the comfort of your home? Don't like the lines at the post office, or maybe you have a fear of paper cuts? They hurt, I know.</p>
-        <h2>Introducting PostPal</h2>
-        <p></p>
+    <div class="view-container"> </div>
+
+    <script type="text/template" class="welcome-view">
+      <div class="welcome-container">
+        <img src="http://www.twiniversity.com/wp-content/uploads/2012/05/MP900341542.jpg"/>
+        <div class="info">
+          <h2>Welcome to PostPal</h2>
+          <p>Want to send a real letter from the comfort of your home? Dont like the lines at the post office, or maybe you have a fear of paper cuts? They hurt, I know.</p>
+          <h2>Introducting PostPal</h2>
+          <div class="img-container">
+            <div>
+              <img src="images/letter.png">
+            </div>
+            <div>
+              <img src="images/stamp.jpg">
+            </div>
+            
+            <div>
+              <img src="images/mailbox.png">
+            </div>
+            
+          </div>
+        </div>
       </div>
-    </div>
+    </script>
 
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -56,6 +73,10 @@
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
+        <script src="scripts/logInView.js"></script>
+        <script src="scripts/SignUpView.js"></script>
+        <script src="scripts/WelcomeView.js"></script>
+        <script src="scripts/Router.js"></script>
         <!-- endbuild -->
 </body>
 </html>

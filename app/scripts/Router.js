@@ -1,14 +1,13 @@
 "use strict";
 
 var AppRouter = Parse.Router.extend({
-	
-	// template: _.template($('.').text()),
 
 	routes: {
-		"" : "welcome",
-		"welcome" : "welcome",
-		"*actions" : "default",
-
+		""         : "welcome",
+		"welcome"  : "welcome",
+		"signup"   : "signup",
+		"login"    : "login",
+ 		"*actions" : "default",
 	},
 
 	initialize: function(options) {
@@ -17,6 +16,16 @@ var AppRouter = Parse.Router.extend({
 
 	welcome: function() {
 		var view = new WelcomeView();
+		this.swap(view);
+	},
+
+	signup: function() {
+		var view = new SignUpView();
+		this.swap(view);
+	},
+
+	login: function() {
+		var view = new LoginView();
 		this.swap(view);
 	},
 

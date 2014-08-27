@@ -1,21 +1,21 @@
 "use strict";
 
-var LoginInView = Parse.View.extend({
+var LoginView = Parse.View.extend({
 	
-	// template: _.template($('.').text()),
+	template: _.template($('.login-view').text()),
 
 	events: {
 
 	},
 
 	initialize: function() {
-		$('.container').append(this.el)
+		$('.view-container').append(this.el)
 		this.render();
 	},
 
 	render: function() {
-
+		var renderTemp = this.template(this.model)
+		this.$el.html(renderTemp);
+		return this;
 	},
-
-
 })

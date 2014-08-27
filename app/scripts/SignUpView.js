@@ -2,20 +2,20 @@
 
 var SignUpView = Parse.View.extend({
 	
-	// template: _.template($('.').text()),
+	template: _.template($('.sign-up-view').text()),
 
 	events: {
 
 	},
 
 	initialize: function() {
-		$('.container').append(this.el)
+		$('.view-container').append(this.el)
 		this.render();
 	},
 
 	render: function() {
-
-	},
-
-	
+		var renderTemp = this.template(this.model)
+		this.$el.html(renderTemp);
+		return this;
+	},	
 })

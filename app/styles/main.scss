@@ -61,13 +61,22 @@ body {
       width: 100%;
 
       div {
-        width: 30%;
+        width: 33%;
         display: inline-block;
 
         img {
           width: 150px;
           height: 150px;
         }
+      }
+    }
+
+    .cost {
+      width: 100%;
+
+      img {
+        width: 200px;
+        height: 200px;
       }
     }
   }

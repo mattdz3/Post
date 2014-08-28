@@ -22,12 +22,6 @@ body {
     margin-left: 150px;
     font-size: 45px;
   }
-
-  button {
-    margin-top: 25px;
-    margin-right: 100px;
-    float: right;
-  }
 }
 
 .footer {
@@ -38,6 +32,12 @@ body {
   box-shadow: 0 0 6px;
   font-size: 20px;
 
+  h1 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
   .footer-about {
     display: inline-block;
     margin-left: 150px;
@@ -46,6 +46,16 @@ body {
   .footer-news {
     display: inline-block;
     float: right;
+    margin-top: 0;
+    margin-right: 200px;
+
+    input {
+      margin-left: 100px;
+    }
+
+    button {
+      text-align: center;
+    } 
   }
 }
 
@@ -83,6 +93,7 @@ body {
       div {
         width: 33%;
         display: inline-block;
+        vertical-align: top;
 
         img {
           width: 150px;
@@ -100,6 +111,8 @@ body {
       }
 
       button {
+        margin-top: 40px;
+        margin-bottom: 40px;
         font-size: 30px;
         padding: 10px;
         border-radius: 4px;

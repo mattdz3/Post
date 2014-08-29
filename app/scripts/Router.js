@@ -15,6 +15,7 @@ var AppRouter = Parse.Router.extend({
 	},
 
 	welcome: function() {
+		$('.view-container').empty();
 		var view = new WelcomeView();
 		this.swap(view);
 	},
@@ -25,6 +26,7 @@ var AppRouter = Parse.Router.extend({
 	},
 
 	login: function() {
+		$('.view-container').empty();
 		var view = new LoginView();
 		this.swap(view);
 	},

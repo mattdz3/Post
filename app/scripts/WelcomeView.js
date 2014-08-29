@@ -5,7 +5,7 @@ var WelcomeView = Parse.View.extend({
 	template: _.template($('.welcome-view').text()),
 
 	events: {
-
+		
 	},
 
 	initialize: function() {

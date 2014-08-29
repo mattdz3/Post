@@ -4,6 +4,7 @@
 body {
   margin: 0;
   background-color: #E8E8E8;
+  font-family: 'Pacifico', cursive;
 }
 
 .header {
@@ -13,7 +14,6 @@ body {
   border-bottom: 1px solid black;
   box-shadow: 0px 0px 6px;
   position: fixed;
-  font-family: 'Pacifico', cursive;
   opacity: 0.95;
 
   h1 {
@@ -27,8 +27,6 @@ body {
 }
 
 .footer {
-  width: 100%;
-  font-family: 'Pacifico', cursive;
   background-color: #E6CFB5;
   border-top: 1px solid black;
   box-shadow: 0 0 6px;
@@ -83,7 +81,6 @@ body {
 
     h2 {
       font-size: 45px;
-      font-family: 'Pacifico', cursive;
     } 
 
     p {
@@ -112,6 +109,7 @@ body {
 
     .cost {
       width: 100%;
+      font-size: 30px;
 
       img {
         width: 200px;
@@ -124,9 +122,9 @@ body {
         font-size: 30px;
         padding: 10px;
         border-radius: 4px;
-        border: 3px solid #A44621;
-        color: #A44621;
-        background-color: #E8E8E8;
+        border: 3px solid #2E2C25;
+        color: #E6CFB5;
+        background-color: #656050;
       }
     }
   }
@@ -145,12 +143,15 @@ body {
   }
 
   input {
-    width: 100px;
-    -webkit-appearance: searchfield-results-decoration;
+    width: 150px;
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
     display: block;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 4px;
+    border: 1px solid black;
   }
 
   button {
@@ -158,5 +159,12 @@ body {
     margin-right: auto;
     margin-left: auto;
     display: block;
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid black;
   }
 }
+
+

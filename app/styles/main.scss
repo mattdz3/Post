@@ -3,11 +3,13 @@
 $background: #0BE8B8;
 $button-color: #0BE8B8;
 $button-background: #2E2C25;
+$main-font: 'Pacifico', cursive;
+$sub-font: 'Delius', cursive;
 
 body {
   margin: 0;
   background-color: #E8E8E8;
-  font-family: 'Pacifico', cursive;
+  font-family: $main-font;
   color: #1F1F1F;
 }
 
@@ -27,6 +29,22 @@ body {
     margin: 0;
     margin-left: 150px;
     font-size: 45px;
+  }
+
+  button {
+    float: right;
+    margin-top: 15px;
+    margin-right: 100px;
+    font-size: 16px;
+    font-family: $sub-font;
+    width: 130px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: $sub-font;
+    border: 3px solid $button-background;
+    color: $button-color;
+    background-color: $button-background;
   }
 }
 
@@ -73,6 +91,7 @@ body {
       text-align: center;
       border-radius: 4px;
       padding: 5px;
+      font-family: $sub-font;
       border: 3px solid $button-background;
       color: $button-color;
       background-color: $button-background;
@@ -99,7 +118,7 @@ body {
     } 
 
     p {
-      font-family: 'Delius', cursive;
+      font-family: $sub-font;
       margin-left: auto;
       margin-right: auto;
       width: 60%;
@@ -137,6 +156,7 @@ body {
         font-size: 30px;
         padding: 10px;
         border-radius: 4px;
+        font-family: $sub-font;
         border: 3px solid $button-background;
         color: $button-color;
         background-color: $button-background;
@@ -170,14 +190,16 @@ body {
   }
 
   button {
+    text-decoration-line: none;
     margin-top: 40px;
     margin-right: auto;
     margin-left: auto;
     display: block;
-    width: 100px;
-    padding: 5px;
+    width: 130px;
+    padding: 10px;
     font-size: 16px;
     border-radius: 4px;
+    font-family: $sub-font;
     border: 1px solid $button-background;
     color: $button-color;
     background-color: $button-background

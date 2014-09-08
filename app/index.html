@@ -24,7 +24,7 @@
 
     <div class="header">
       <a href="#welcome"><h1>PostPal</h1></a>
-      <button class="write">WRITE</button>
+      <a href="#write"><button class="write">WRITE</button></a>
     </div>
 
     <div class="view-container"> </div>
@@ -100,6 +100,26 @@
       </div>
     </script>
 
+    <script type="text/template" class="write-view">
+      <div class="write-container">
+        <div class="return-add">
+          Return Address:
+          <input placeholder="Name">
+          <input placeholder="Street, Apt Number"> 
+          <input placeholder="City, State, Zip">
+        </div>
+        <div class="send-add">
+          Send To Address
+          <input placeholder="Name">
+          <input placeholder="Street, Apt Number"> 
+          <input placeholder="City, State, Zip">
+        </div>
+        <div class="write-doc">
+          <textarea> </textarea>
+        </div>
+      </div>
+    </script>
+
     <script type="text/template" class="about-view">
       <div class="about-container">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -146,6 +166,7 @@
         <script src="scripts/loginView.js"></script>
         <script src="scripts/SignUpView.js"></script>
         <script src="scripts/WelcomeView.js"></script>
+        <script src="scripts/WriteView.js"></script>
         <script src="scripts/aboutView.js"></script>
         <script src="scripts/contactView.js"></script>
         <script src="scripts/Router.js"></script>

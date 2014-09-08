@@ -1,11 +1,11 @@
 "use strict";
 
-var WelcomeView = Parse.View.extend({
+var WriteView = Parse.View.extend({
 	
-	template: _.template($('.welcome-view').text()),
+	template: _.template($('.write-view').text()),
 
 	events: {
-	
+
 	},
 
 	initialize: function() {

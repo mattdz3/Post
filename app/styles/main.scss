@@ -250,7 +250,7 @@ a {
   margin-left: auto;
   padding-top: 200px;
   margin-bottom: 150px;
-  width: 80%;
+  width: 70%;
 
   .return-add {
     width: 45%;
@@ -305,6 +305,24 @@ a {
       padding: 10px;
       border-radius: 4px;
       border: 1px solid $border;
+    }
+  }
+
+  .doc-done {
+    display: block;
+
+    button {
+      float: right;
+      text-decoration-line: none;
+      margin-top: 40px;
+      width: 130px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      font-family: $sub-font;
+      border: 1px solid $button-background;
+      color: $button-color;
+      background-color: $button-background
     }
   }
 }

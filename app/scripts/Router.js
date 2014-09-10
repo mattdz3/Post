@@ -6,6 +6,7 @@ var AppRouter = Parse.Router.extend({
 		""         : "welcome",
 		"welcome"  : "welcome",
 		"write"    : "write",
+		"done"     : "done",
 		"signup"   : "signup",
 		"login"    : "login",
 		"about"    : "about",
@@ -50,6 +51,12 @@ var AppRouter = Parse.Router.extend({
 	write: function() {
 		$('.view-container').empty();
 		var view = new WriteView();
+		this.swap(view);
+	},
+
+	done: function() {
+		$('.view-container').empty();
+		var view = new DoneView();
 		this.swap(view);
 	},
 

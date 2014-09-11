@@ -53,6 +53,10 @@ a {
     color: $button-color;
     background-color: $button-background;
   }
+
+  .log {
+    margin-right: 30px;
+  }
 }
 
 .footer {
@@ -189,7 +193,7 @@ a {
   width: 50%;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 100px;
   text-align: center;
 
@@ -229,11 +233,22 @@ a {
 
 .about-container {
   font-family: $sub-font;
-  padding-top: 200px;
+  padding-top: 150px;
   padding-bottom: 150px;
   width: 60%;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
+
+  h1 {
+    font-family: $main-font;
+  }
+
+  p {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 .contact-container {

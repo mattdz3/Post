@@ -5,7 +5,7 @@ var SignUpView = Parse.View.extend({
 	template: _.template($('.sign-up-view').text()),
 
 	events: {
-
+		"click .create-user" : "createUser",
 	},
 
 	initialize: function() {
@@ -17,5 +17,11 @@ var SignUpView = Parse.View.extend({
 		var renderTemp = this.template(this.model)
 		this.$el.html(renderTemp);
 		return this;
-	},	
+	},
+
+	createUser: function() {
+		var user = new Parse.User();
+		user.set("username", $('.username').val());
+		user.set("password", $('.password').val());
+	},
 })

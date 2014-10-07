@@ -19,6 +19,7 @@
     <link href='http://fonts.googleapis.com/css?family=Sintony' rel='stylesheet' type='text/css'>
   </head>
   <body>
+
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -59,23 +60,21 @@
           <div class="img-container">
             <div>
               <img src="images/letter.png">
-              <p>Write a letter to a family member or a friend.</p>
+              <p>What you do.</p>
             </div>
             <div>
               <img src="images/stamp.jpg">
-              <p>We take that letter and put it in an envelope and slap a stamp on it.</p>
+              <p>What we do.</p>
             </div>
             <div>
               <img src="images/mailbox.png">
-              <p>A few days later your friend will open their mail box to find a real life paper letter!</p>
+              <p>What they get!</p>
             </div>
           </div>
           <div class="cost"> 
 
             <h3>What does it cost you?</h3>
-            <img src="images/zero.png">
-            <img src="images/money.png">
-            <p>Thats right, we cover all the cost.</p>
+            <p> Not much cards are x monies and letters are free*
             <p>So what are you waiting for? Get mailin!</p>
             <a href="#login"><button class="start"> GET STARTED </button></a>
           </div>
@@ -96,9 +95,9 @@
     <script type="text/template" class="sign-up-view">
       <div class="login-container">
         <h1>Sign Up</h1>
-        <input placeholder="EMAIL"> 
-        <input type="password" placeholder="PASSWORD">
-        <a href="#"><button>CREATE ACCOUNT</button></a>
+        <input placeholder="EMAIL" class="username"> 
+        <input type="password" placeholder="PASSWORD" class="passeord">
+        <a href="#"><button class="create-user">CREATE ACCOUNT</button></a>
         <a href="#"><button>HOME</button></a>
       </div>
     </script>
@@ -149,12 +148,7 @@
 
     <script type="text/template" class="done-view">
       <div class="done-container">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       Thanks!
       </div>
     </script>
 
@@ -167,7 +161,7 @@
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/underscore/underscore.js"></script>
+     <script src="bower_components/underscore/underscore.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
